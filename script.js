@@ -7,24 +7,24 @@ const todoList = document.querySelector(".todo-list");
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
-//functions
+//Functions
 function addTodo(event) {
   //prevent form from submitting
   event.preventDefault();
-  //Todo DIV
+  //Todo Dis
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
-  //Create LI
+  //Create List
   const newTodo = document.createElement("li");
   newTodo.innerText = todoInput.value;
   newTodo.classList.add("todo-item");
   todoDiv.appendChild(newTodo);
-  //check MARK BUTTON
+  //check MARK Btuton
   const completedButton = document.createElement("button");
   completedButton.innerHTML = '<i class="fas fa-check"></i>';
   completedButton.classList.add("complete-btn");
   todoDiv.appendChild(completedButton);
-  //check trash BUTTON
+  //check trash Button
   const trashButton = document.createElement("button");
   trashButton.innerHTML = '<i class="fas fa-trash"></i>';
   trashButton.classList.add("trash-btn");
