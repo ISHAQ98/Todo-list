@@ -8,9 +8,9 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
 //Functions
-function addTodo(event) {
+function addTodo(ev) {
   //prevent form from submitting
-  event.preventDefault();
+  ev.preventDefault();
   //Todo Dis
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
